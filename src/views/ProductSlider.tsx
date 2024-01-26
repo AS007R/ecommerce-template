@@ -1,12 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 import Image from "next/image";
 
 type dataType = {
@@ -32,43 +25,35 @@ const ProductSlider = ({ data }: propData) => {
           Check What We Have
         </h3>
       </center>
-      <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="w-full"
-      >
-        <CarouselContent>
-          {data.map((d: dataType) => (
-            <CarouselItem key={d.id} className="md:basis-1/2 lg:basis-1/3">
-              <div>
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center">
-                    <div className="">
-                      <div className="w-[300px] cursor-pointer rounded-lg bg-white  shadow duration-150 hover:scale-105 hover:shadow-md">
-                        <Image
-                          src={d.img}
-                          width={400}
-                          height={90}
-                          alt="Picture of the author"
-                        />
-                        <p className="my-4 pl-4 font-bold text-Black">
-                          {d.name}
-                        </p>
-                        <p className="mb-4 ml-4 text-xl font-semibold text-gray-800">
-                          ${d.price}
-                        </p>
-                      </div>
+      <center className="flex overflow-hidden p-5 gap-3 logos">
+        {data.map((d: dataType) => (
+          <div key={d.id} className="md:basis-1/2 lg:basis-1/3 logos-slide">
+            <div>
+              <Card className="shadow duration-150 hover:scale-105 hover:shadow-md">
+                <CardContent className="flex items-center justify-center">
+                  <div className="">
+                    <div
+                      className="w-[300px] mt-5 px-2 cursor-pointer rounded-lg bg-white  
+                    "
+                    >
+                      <Image
+                        src={d.img}
+                        width={400}
+                        height={90}
+                        alt="Picture of the author"
+                      />
+                      <p className="my-4 pl-4 font-bold text-Black">{d.name}</p>
+                      <p className="mb-4 ml-4 text-xl font-semibold text-gray-800">
+                        ${d.price}
+                      </p>
                     </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        ))}
+      </center>
     </section>
   );
 };
