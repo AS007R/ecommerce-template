@@ -55,7 +55,7 @@ const Hero = () => {
               width={600}
               height={90}
               alt="Picture of the author"
-              className="absolute top-0 -translate-x-7"
+              className="img_show absolute top-0 -translate-x-7"
             />
           </div>
         </div>

@@ -118,3 +118,6 @@
   animation: 10s slide infinite linear;
 }
 
+.img_show {
+  display: block !important;
+}

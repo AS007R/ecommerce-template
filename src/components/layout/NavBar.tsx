@@ -101,26 +101,26 @@ const NavBar = () => {
         <div className="space-y-1 px-2 pb-3 pt-2">
           {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
           <Link
-            href="#"
+            href="/women"
             className=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             aria-current="page"
           >
             Women
           </Link>
           <Link
-            href="#"
+            href="/men"
             className=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Men
           </Link>
           <Link
-            href="#"
+            href="/child"
             className=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Children
           </Link>
           <Link
-            href="#"
+            href="/products"
             className=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             All Products
