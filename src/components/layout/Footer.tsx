@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div>
               <Image
-                src="/logo.webp"
+                src="/Logo.webp"
                 width={150}
                 height={90}
                 alt="Picture of the author"
