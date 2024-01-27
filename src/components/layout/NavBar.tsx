@@ -26,12 +26,14 @@ const NavBar = () => {
           </div>
           <div className="  flex gap-7 items-center justify-center w-full sm:w-auto sm:items-stretch sm:justify-start">
             <div className=" flex flex-shrink-0 items-center">
-              <Image
-                src="/logo.webp"
-                width={150}
-                height={90}
-                alt="Picture of the author"
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.webp"
+                  width={150}
+                  height={90}
+                  alt="Picture of the author"
+                />
+              </Link>
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:block">

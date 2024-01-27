@@ -3,7 +3,6 @@ import NewsLetter from "@/views/NewsLetter";
 import ProductSlider from "@/views/ProductSlider";
 import Promotion from "@/views/Promotion";
 import Quality from "@/views/Quality";
-import { StaticImageData } from "next/image";
 
 type dataType = {
   id: number;
