@@ -28,7 +28,7 @@ const NavBar = () => {
             <div className=" flex flex-shrink-0 items-center">
               <Link href="/">
                 <Image
-                  src="/logo.webp"
+                  src="/Logo.webp"
                   width={150}
                   height={90}
                   alt="Picture of the author"

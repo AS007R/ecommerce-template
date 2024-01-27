@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="flex-1 hidden lg:flex justify-center ">
           <div className="  bg-pink-100 w-[500px] h-[500px] rounded-full">
             <Image
-              src="/hero.webp"
+              src="/products/hero.webp"
               width={600}
               height={90}
               alt="Picture of the author"
