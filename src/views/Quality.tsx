@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Quality = () => {
   return (
@@ -52,7 +53,9 @@ const Quality = () => {
               color is the actual natural color of the fiber, undyed and 100%
               traceable.
             </p>
-            <Button className="w-44 rounded-none">See All Products</Button>
+            <Link href="/products">
+              <Button className="w-44 rounded-none">See All Products</Button>
+            </Link>
           </div>
         </div>
       </div>
