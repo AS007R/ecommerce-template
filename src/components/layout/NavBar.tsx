@@ -71,7 +71,12 @@ const NavBar = () => {
               className=" flex item-center border-slate-400 border-2 rounded-lg px-1"
               action="action_page.php"
             >
-              <input type="text" placeholder="Search.." name="search" />
+              <input
+                type="text"
+                placeholder="Search..."
+                name="search"
+                className="focus:outline-none"
+              />
               <button type="submit">
                 <Search />
               </button>

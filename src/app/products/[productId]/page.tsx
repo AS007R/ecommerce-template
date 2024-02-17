@@ -235,7 +235,7 @@ const ProductDetail = ({ params }: { params: { productId: string } }) => {
           <div className="flex gap-5 md:mt-10 mt-5 items-center">
             <Button className="h-10 px-4 rounded-none">
               <ShoppingCart className="mr-2" />
-              Start SHopping
+              Start Shopping
             </Button>
             <h2 className="scroll-m-20  text-3xl font-semibold tracking-tight first:mt-0">
               ${product.price}
